@@ -9,7 +9,7 @@ jobs:
             - image: "cimg/base:stable"
         steps:
             - node/install:
-                node-version: '14.19.0'
+                  node-version: "14.19.0"
             - checkout
             - run:
                   name: Install Front-End
@@ -23,10 +23,10 @@ jobs:
                   name: Lint Front-End
                   command: |
                       npm run frontend:lint
-            - run:
-                  name: Test Front-End
-                  command: |
-                      npm run frontend:test
+            # - run:
+            #       name: Test Front-End
+            #       command: |
+            #           npm run frontend:test
             - run:
                   name: Install Back-End
                   command: |
