@@ -46,7 +46,7 @@ jobs:
             - run:
                   name: Deploy Back-End
                   command: |
-                      eb init udagram-api-prod -r $AWS_DEFAULT_REGION -p Node.js 16 running on 64bit Amazon Linux 2
+                      eb init udagram-api-prod -r $AWS_DEFAULT_REGION -p "Node.js 16 running on 64bit Amazon Linux 2"
                       npm run backend:deploy
             - run:
                   name: Deploy  Front-End
