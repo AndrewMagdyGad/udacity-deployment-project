@@ -1,2 +1,2 @@
 deploy:
-    artifact: udagram-api/www/Archive.zip
+    artifact: ./udagram-api/www/Archive.zip
