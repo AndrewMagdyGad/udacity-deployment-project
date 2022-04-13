@@ -37,13 +37,13 @@ jobs:
                       npm run backend:build
             - eb/setup
             - run:
+                  name: Deploy  Front-End
+                  command: npm run frontend:deploy
+            - run:
                   name: Deploy Back-End
                   command: |
                       eb init udagram-api -r $AWS_DEFAULT_REGION -p node.js
                       npm run backend:deploy
-            - run:
-                  name: Deploy  Front-End
-                  command: npm run frontend:deploy
     # deploy:
     #     docker:
     #         - image: "cimg/base:stable"
