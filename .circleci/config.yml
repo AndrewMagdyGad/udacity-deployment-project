@@ -43,6 +43,8 @@ jobs:
                   at: ~/project
             - aws-cli/setup
             - eb/setup
+            - node/install:
+                  node-version: "14.19.0"
             - run:
                   name: Deploy  Front-End
                   command: npm run frontend:deploy
