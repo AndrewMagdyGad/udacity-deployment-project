@@ -31,5 +31,6 @@ export function getPutSignedUrl(key: string): string {
     Key: key,
     Expires: signedUrlExpireSeconds,
     ACL: 'public-read',
+    ContentType: 'application/octet-stream',
   });
 }
