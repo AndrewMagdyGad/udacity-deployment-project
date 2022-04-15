@@ -2,7 +2,7 @@
 
 The udagram application is a fairly simple application that includes all the major components of a Full-Stack web application.
 
-This web application is hosted on (this link)[http://udacitytestbucket.s3-website-us-east-1.amazonaws.com]
+This web application is hosted on [this link](http://udacitytestbucket.s3-website-us-east-1.amazonaws.com)
 
 ## Getting Started
 
